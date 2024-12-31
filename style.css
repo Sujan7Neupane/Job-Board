@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "search apply"
+    "results apply";
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  height: 80vh;
+}
+
+.div-search {
+  grid-area: search;
+  background-color: rgb(241, 240, 245);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.search-input-wrapper {
+  display: flex;
+  border-radius: 10px 0 0 10px;
+  overflow: hidden;
+  gap: 0.2rem;
+}
+
+.search-input-wrapper .search-wrapper {
+  display: flex;
+  align-items: center;
+
+  background-color: rgb(255, 255, 255);
+  padding: 0 0.2rem;
+}
+
+.search-input-wrapper .search-wrapper input {
+  padding: 0.5rem;
+  border: none;
+}
+
+.search-wrapper input::placeholder {
+  color: rgb(163, 163, 163);
+}
+
+.search-wrapper input:focus {
+  border: none;
+  outline: none;
+}
+
+.search-input-wrapper select {
+  border: none;
+  border-radius: 0 10px 10px 0;
+}
+
+.search-input-wrapper select {
+  color: rgb(163, 163, 163);
+}
+
+.select-wrapper select:focus {
+  border: none;
+  outline: none;
+}
+
+.button-search {
+  margin-left: 10px;
+  padding: 0.5rem 1rem;
+  background-color: rgb(255, 95, 163);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+/*Search results section */
+
+.search-results {
+  grid-area: results;
+  padding: 10px;
+  background-color: rgb(241, 240, 245);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.search-results .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.search-results .heading small {
+  font-size: 0.7rem;
+  color: rgb(147, 147, 147);
+}
+
+.search-results .search-results-boxes {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.search-results .search-results-boxes .box {
+  background-color: #fff;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  min-width: 49%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.header .icon-wrapper {
+  height: 40px;
+  width: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(222, 222, 222);
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+}
+
+.header .icon-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.stack-div {
+  display: flex;
+  gap: 0.5rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.stack-div small {
+  background-color: rgb(239, 239, 239);
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.2rem;
+}
+
+.more-info-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.more-info-div small {
+  color: rgb(169, 169, 169);
+  font-size: 0.7rem;
+}
+
+/* Search results section */
+
+/* Apply div */
+.apply-div {
+  grid-area: apply;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+
+  border-radius: 1rem;
+  box-shadow: 0px 0px 8px 1px #cdcdcd;
+
+  position: relative;
+  height: 100%;
+}
+
+.apply-div .header {
+  border-bottom: 1px solid rgb(230, 230, 230);
+  padding: 0.5rem;
+}
+
+.apply-div .details-div {
+  border-bottom: 1px solid rgb(230, 230, 230);
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.apply-div .details-div .desc a {
+  color: rgb(222, 0, 155);
+}
+
+.apply-div .stack-div {
+  border-bottom: 1px solid rgb(230, 230, 230);
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  display: block;
+}
+
+.salary-div {
+  padding: 0.5rem;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  margin: 1rem 0;
+}
+
+.applyBtn {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: rgb(255, 95, 165);
+  width: 95%;
+  margin-top: auto;
+
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
