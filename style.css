@@ -133,6 +133,7 @@ body {
   min-width: 49%;
 }
 
+/* header */
 .header {
   display: flex;
   align-items: center;
@@ -158,6 +159,8 @@ body {
   width: 100%;
   object-fit: cover;
 }
+
+/* header */
 
 .stack-div {
   display: flex;
@@ -224,11 +227,13 @@ body {
   display: block;
 }
 
+/* salary-div */
 .salary-div {
   padding: 0.5rem;
   border-bottom: 1px solid rgb(230, 230, 230);
   margin: 1rem 0;
 }
+/* salary-div */
 
 .applyBtn {
   padding: 0.5rem;
